@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Waterfall&display=swap');
+
+@font-face {
+    font-family: 'bakingLion';
+    src: url(../media/fonts/bakinglion.otf);
+} 
+
+
+body{
+    margin:0;
+    padding:0;
+    font-family: "Grandiflora One", cursive;
+    font-weight: 600;
+    width: 100vw;
+}
+
+canvas{
+    display:block;
+}
+
+#frontPage{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    font-family: "Grandiflora One", cursive;
+    font-weight: 600;
+    font-size: .9rem;
+    border-radius: 50px;
+    margin-top: 2%;
+    padding: 3%;
+    background-color: transparent;
+}
+
+/* confetti animation */
+@keyframes bang {
+    from {
+      transform: translate3d(0,0,0);
+      opacity: 1;
+    }
+  }
+
+  i {
+    position: absolute;
+    left: 90%;
+    top: 75%;
+    width: 3px;
+    height: 8px;
+    background: red;
+    opacity: 0;
+  }
+
+
+
+#startButton{
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#startButton:hover{
+    background-color: #ffffff;
+    color: #b5a6e8;
+}
+
+#learnButton{
+    border: 2px solid #5C3E36;
+    color: #5C3E36;
+    cursor: pointer;
+}
+
+#learnButton:hover{
+    background-color: #5C3E36;
+    color: #FFEBEE;
+}
+
+#signButton{
+    border: 2px solid #1F4D40;
+    color: #1F4D40;
+    cursor: pointer;
+}
+
+#signButton:hover{
+    background-color: #1F4D40;
+    color: #D1DFE0;
+
+}
+
+
+
+ 
+h1{
+    font-family: "Waterfall", cursive;
+    font-size: 6rem;
+    margin-top: 0;
+    padding-top: 1rem;
+}
+
+#firstPage{
+    display: flex;
+    flex-direction: row;
+    background-color: #b5a6e8;
+    color: #ffffff;
+    height: 100vh;
+    
+}
+#firstPageContent{
+    margin-top: 20vh;
+    width: 40vw;
+    height: 100vh;
+    text-align: right;
+    margin-left: 15vw;
+    margin-right: 7vw;
+}
+
+#bodytext1{
+    width: 30vw;
+    margin-left: 9vw;
+}
+
+#fleximg{
+    width: 40vw;
+    text-align: center;
+
+}
+
+img{
+    display: block;
+   margin-right: 0;
+   margin-left: 0;
+    width: 62vw;
+    height: 100vh;
+}
+
+#scroll{
+    position: absolute;
+    bottom: 7%;
+    left: 45%;
+    color: #ffffff;
+    font-size: .8rem;
+    cursor: pointer;
+    animation: bounce 2s infinite 7ms;
+}
+
+/* create a keyframe animation to make #scroll bounce*/
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+
+#secondPage{
+    background-color: #FFEBEE;
+    color: #5C3E36;
+}
+
+.pageFlex{
+    display: flex;
+    flex-direction: row;
+}
+#secondPageContent{
+    margin-top: 15vh;
+    width: 17vw;
+    height: 68vh;
+    text-align: left;
+    margin-left: 7vw;
+    margin-right: 15vw;
+}
+#fleximg2{
+    margin-top: -16.2vh;
+    width: 40vw;
+    align-items: center;
+}
+
+#mix{
+    display: block;
+   margin-right: 0;
+   margin-left: 0;
+    width: 61vw;
+    height: 100vh;
+}
+
+#bodytext2{
+    width: 30vw;
+    margin-right: 9vw;
+}
+
+#PCAheader{
+    position: relative;
+    width: 27vw;
+    height: 4vh;
+    left: 7vw;
+    padding-top: 3%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: "bakingLion";
+    font-weight: 200;
+}
+
+
+#thirdPage{
+    background-color: #D1DFE0;
+    color: #1F4D40;
+}
+#thirdPageContent{
+    margin-top: 20vh;
+    width: 40vw;
+    height: 90vh;
+    text-align: right;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
+#flex3d{
+    /* margin-top: 20vh; */
+    width: 50vw;
+    height: 90vh;
+    text-align: center;
+}
+#scroll2{
+    position: relative;
+    bottom: -25%;
+    color:  #1F4D40;
+    font-size: .8rem;
+    cursor: pointer;
+    animation: bounceRight 2s infinite 7ms;
+}
+
+/* create an animation that bounces text to the right */
+@keyframes bounceRight {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(30px);
+    }
+    60% {
+        transform: translateX(15px);
+    }
+}
